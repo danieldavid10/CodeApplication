@@ -8,6 +8,7 @@
 </head>
 <body>
     <h1>Register</h1>
+    <?php echo validation_errors(); ?>
     <?php
         echo 
         form_open('register/create',array('method'=>'POST'));
@@ -28,8 +29,7 @@
         echo form_close();
 
     ?>
-
-
+    <?= isset($msg) ? $msg : '';?>
     
 </body>
 </html>

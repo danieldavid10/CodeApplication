@@ -6,8 +6,10 @@ class User extends CI_Model
     }
 
     public function create($data){
-        
-
+        if (!$this->db->insert('users', $data)) {
+            return false;
+        }
+        return true;
     }
 }
 

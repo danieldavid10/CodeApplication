@@ -28,7 +28,7 @@ class Migration_create_user extends CI_Migration {
                     'constraint' => '100',
                     'null' => FALSE,
                 ),   
-                'starus' => array(
+                'status' => array(
                     'type' => 'TINYINT',
                     'constraint' => '1',
                     'null' => FALSE,
